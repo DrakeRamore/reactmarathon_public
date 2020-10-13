@@ -16,8 +16,9 @@ class Student {
     }
 
     static studentBuilder() {
-        this._fullName = "Ihor Kohut";
-        this._direction = "qc";
+        /*this._fullName = "Ihor Kohut";
+        this._direction = "qc";*/
+        return new Student("Ihor Kohut", "qc");
     }
 
     get direction() {

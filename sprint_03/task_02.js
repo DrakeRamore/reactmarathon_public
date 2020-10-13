@@ -4,7 +4,6 @@ const product = function() {
     }, this.product);
 };
 
-const contextObj = { // your code }
+const contextObj = { product: 10};
 
-const getProduct = // product function that is called in the context of an contextObj 
-                     // with two additional parameters
+const getProduct = product.bind(contextObj, 2, 3);
